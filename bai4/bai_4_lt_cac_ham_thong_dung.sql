@@ -90,21 +90,6 @@ join student s on s.id=m.student_id
 group by student_id
 having diemtb>15;
 -- Hiển thị thông tin các học viên có điểm trung bình lớn nhất.
-select * from mark m
-join student s on s.class_id=m.student_id
-where mark=(
-select avg(mark) as tb from mark
-group by student_id
-order by tb desc
-limit 1
-);
-
-select avg(mark) as tb from mark
-group by student_id
-order by tb desc
-limit 1;
-
-
 SELECT S.id,S.name, AVG(m.mark) as avg_mark
 FROM Student S join Mark M on S.id = M.Student_Id
 GROUP BY S.id
