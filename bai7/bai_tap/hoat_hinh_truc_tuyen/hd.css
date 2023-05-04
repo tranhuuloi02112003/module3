@@ -1,0 +1,75 @@
+/*chỉnh ảnh:vertical-align:middle ;*/
+body{
+    width: 1200px;
+    height: auto;
+    margin: 0px auto;
+}
+#container{
+    width: 1000px;
+    height: auto;
+}
+.item1 {
+    grid-area: header;
+    background: azure;
+}
+
+.item2 {
+    grid-area: sidebar;
+    height: auto;
+    margin: 20px 20px;
+    /*width: 40%;*/
+}
+
+.item3 {
+    grid-area: content;
+    /*display: inline-block;*/
+    margin: 20px 20px;
+    /*width: 70 %;*/
+}
+
+h3 {
+    font-size: 25px;
+}
+
+b {
+    display: inline-block;
+    width: 350px;
+
+}
+
+#container {
+    margin: 0px 20px;
+    display: grid;
+    grid-template-areas: 'header header header' 'sidebar content content';
+}
+
+.item1 .menu {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.item1 .menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.item1 .menu ul li {
+    margin-right: 40px;
+    display: flex;
+    margin-left: 10px ;
+}
+
+.item1 .menu ul li a {
+    text-decoration: none;
+}
+
+.item2 img {
+    width: 350px;
+}
+#video1,#video2,#video3{
+display: none;
+}
+a:hover{
+    color: brown;
+    font-size: 17px;
+}

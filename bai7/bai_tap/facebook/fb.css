@@ -1,0 +1,107 @@
+#item1 {
+    grid-area: header;
+    /*border: 1px solid grey;*/
+}
+
+#item2 {
+    grid-area: sidebar;
+    /*background: burlywood;*/
+    position: relative;
+    top: 70px;
+}
+
+#item3 {
+    grid-area: content;
+    position: relative;
+    top: 70px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'header header header header' 'sidebar content content content';
+}
+header{
+    position: fixed;
+}
+header {
+    display: flex;
+
+}
+
+header #logo {
+    flex: 20%;
+    /*background: aqua;*/
+    /*text-align: center;*/
+    /*align-items: center;*/
+}
+
+header #logo a {
+    margin: 5px 15px;
+
+}
+
+header #logo input {
+    /*flex: 25%;*/
+    border-radius: 25px;
+    font-size: 17px;
+}
+
+header #logo a img {
+    width: 35px;
+    height: 35px;
+    /*căn ảnh*/
+    vertical-align: middle;
+}
+
+
+header #menu {
+    flex: 55%;
+    /*background: blue;*/
+
+}
+header #menu ul {
+    display: flex;
+    list-style: none;
+}
+
+header #menu ul li {
+    margin: 0px 30px;
+}
+
+header #menu ul li a {
+    text-decoration: none;
+    color: black;
+    /*padding: 0px 20px;*/
+
+    font-size: 20px;
+}
+
+header #chucnang {
+    /*text-align: left;*/
+    flex: 25%;
+    /*align-items: center;*/
+}
+header #chucnang div {
+   margin: 15px 0px;
+    text-align: center;
+}
+header #chucnang div a {
+    font-size: 20px;
+    text-decoration: none;
+}
+aside #function #menu2 li {
+    list-style: none;
+    margin: 20px;
+}
+aside #function #menu2 li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#item3 img{
+   width: 1000px;
+}
+li:hover{
+    font-size: 20px;
+    color: red;
+}

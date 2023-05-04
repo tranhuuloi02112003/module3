@@ -1,0 +1,26 @@
+.item1 {grid-area: header}
+.item2 {grid-area: nav}
+.item3 {grid-area: section}
+.item4 {grid-area: article}
+.item5 {grid-area: aside}
+.item6 {grid-area: footer}
+
+.container > div{
+    background-color: red;
+    border: 1px solid cornflowerblue;
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+            'header header header'
+    'nav nav nav'
+    'section section aside'
+    'article article aside'
+    'footer footer footer'
+;
+}
+nav ul li {
+    display: inline;
+    margin: 15px;
+}

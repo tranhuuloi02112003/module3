@@ -1,0 +1,28 @@
+body{
+    font-family: Arial;
+
+}
+h1{
+    text-align: center;
+    color: red;
+}
+.menu{
+    background: aqua;
+}
+
+.menu ul li{
+    /*border: 1px solid black;*/
+    display: inline;
+    text-align: center;
+    line-height: 25px;
+    margin: 10px;
+
+}
+/*di chuột vào đổi màu*/
+li:hover{
+    font-size: 17px;
+    color: red;
+}
+img{
+    font-size: 10px;
+}

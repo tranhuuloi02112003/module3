@@ -1,0 +1,93 @@
+#item1 {
+    grid-area: header;
+    background: dimgrey;
+    display: flex;
+    font-size: 25px;
+}
+
+#item1 #menu {
+    flex: 90%;
+}
+#item1 #menu #menu1 {
+    display: flex;
+    list-style: none;
+}
+#item1 #menu #menu1 li {
+    margin-left:20px;
+}
+#item1 #menu #menu1 li a {
+    text-decoration: none;
+    color: #CDCDCD;
+}
+
+#item1 #login {
+    flex: 10%;
+    position: relative;
+}
+
+#item1 #login div {
+    position: absolute;
+    top: 20px;
+}
+#item1 #login div a{
+   text-decoration: none;
+    color: #CDCDCD;
+}
+
+
+
+#item2 {
+    grid-area: sidebar;
+    background: #CDCDCD;
+}
+#item2 ul{
+    list-style: none;
+
+}
+#item2 ul li{
+    margin-right:40px;
+}
+#item2 ul a{
+    text-decoration: none;
+}
+
+#item3 {
+    grid-area: content;
+}
+#item3 #information {
+    margin-left: 15px;
+    height: 400px;
+}
+
+#item4 {
+    grid-area: aside;
+    background: #CDCDCD;
+
+}
+#item4 div {
+    /*display: flex;*/
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*text-align: center;*/
+    /*align-items: center;*/
+    /*display: inline;*/
+    /*background: #3d3da9;*/
+    margin: 20px;
+    border: 1px solid azure;
+}
+
+#item5 {
+    grid-area: footer;
+    background:dimgrey ;
+}
+#item5 p{
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: 'header header header header header' 'sidebar content content content aside' 'footer footer footer footer footer ';
+}

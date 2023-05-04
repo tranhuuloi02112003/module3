@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="hd.css">
+    <script>
+        function myFunction1() {
+            hiddenAll();
+            document.getElementById("video1").style.display = "block";
+        }
+
+        function myFunction2() {
+            hiddenAll();
+            document.getElementById("video2").style.display = "block";
+        }
+
+        function myFunction3() {
+            hiddenAll();
+            document.getElementById("video3").style.display = "block";
+        }
+
+        function hiddenAll() {
+            document.getElementById("video").style.display = "none";
+            document.getElementById("video1").style.display = "none";
+            document.getElementById("video2").style.display = "none";
+            document.getElementById("video3").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+
+<h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img_fjords.jpg">
+            <img src="img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+            <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+            <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+            <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+    <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+</div>
+
+
+
+</body>
+<body>
+<div id="container">
+    <div class="item1">
+        <div>
+            <h3>Phim hoạt hình</h3>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Phim hoạt hình</a></li>
+                <li><a href="">Phim hoạt hình yêu thích</a></li>
+
+                <li><a href="">Nhân vật hoạt hình</a></li>
+                <li><a href="">Góp ý</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="item2">
+        <a onclick="myFunction1()">
+            <img src=./img/banhkeo.jpg alt="">
+        </a>
+        <a onclick="myFunction1()">[S8] Doraemon Tập 372 - Lạc Vào Vùng Đất Bánh Kẹo - Hoạt Hình Tiếng Việt
+        </a>
+
+        <a onclick="myFunction2()">
+            <img src="./img/505.jpg" alt="">
+        </a>
+        <a onclick="myFunction2()">
+            [S10] Doraemon - Tập 505-Nobita Biến Thành Shizuka, Thuốc Nhân Bản Ngộ Không - Hoạt Hình Tiếng Viêt
+        </a>
+
+        <a onclick="myFunction3()">
+            <img src="./img/tihon.jpg" alt="">
+        </a>
+        <a onclick="myFunction3()">
+            NOBITA VÀ CUỘC CHIẾN VŨ TRỤ TÍ HON 2021
+        </a>
+
+    </div>
+    <div class="item3">
+        <iframe id="video" width="800" height=450" src="https://www.youtube.com/embed/ISx8E9v6PA4"
+                title="YouTube video player">
+        </iframe>
+        <!--        tí hon-->
+        <iframe id="video1" width="800" height="450" src="https://www.youtube.com/embed/dd_R1GQwKlY"
+                title="YouTube video player"
+        ></iframe>
+
+        <!--        [S10] Doraemon - Tập 505-Nobita Biến Thành Shizuka, Thuốc Nhân Bản Ngộ Không-->
+        <iframe id="video2" width="800" height="450" src="https://www.youtube.com/embed/ol2GRZnZKXM"
+                title="YouTube video player"
+        ></iframe>
+
+        <!--        bánh kẹo-->
+        <iframe id="video3" width="800" height="450" src="https://www.youtube.com/embed/WkrdkZrZw8Q"
+                title="YouTube video player"
+        ></iframe>
+    </div>
+
+</div>
+</body>
+</html>
